@@ -7,32 +7,42 @@ import {NavLink} from 'react-router-dom';
 class Navbar extends Component {
     
     componentDidMount(){
-        M.AutoInit();
+        let elem = document.querySelector('.sidenav');
+        M.Sidenav.init(elem, {
+            closeOnClick: true
+        });
         setTimeout(() => {
             document.getElementById('social').style.right = '0';            
-        }, 2000);
+        }, 3000);
+        document.addEventListener('scroll', () => {
+            if(document.documentElement.scrollTop || document.body.scrollTop > 10){
+                document.querySelector('nav').style.top = '0';
+            }else if(document.documentElement.scrollTop || document.body.scrollTop <= 10){
+                document.querySelector('nav').style.top = '30px';
+            }
+        })
     }
     render(){
         return(            
-            <div>
-                <nav className='nav-wrapper #1e88e5 blue darken-1'>
+            <div className='navbar-fixed'>
+                <nav className='nav-wrapper white'>
                     <div className="container">
-                        <a href="/" className='brand-logo'>Portfolio</a>
-                        <a href="/" className="sidenav-trigger hide-on-small-only" data-target='mobile-links'>
-                            <i className="material-icons">menu</i>
+                        <NavLink to="/" className='brand-logo teal-text text-darken-4'>Portfolio</NavLink>
+                        <a href="/" className="sidenav-trigger" data-target='mobile-links'>
+                            <i className='material-icons'>menu</i>
                         </a>
                         <ul className='right hide-on-med-and-down'>
-                            <li><NavLink to="/">About</NavLink></li>
-                            <li><NavLink to="/work">My Work</NavLink></li>
-                            <li><NavLink to="/contact">Contact</NavLink></li>
+                            <li><NavLink className='teal-text text-darken-3' to="/">About</NavLink></li>
+                            <li><NavLink className='teal-text text-darken-3' to="/work">My Work</NavLink></li>
+                            <li><NavLink className='teal-text text-darken-3' to="/contact">Contact</NavLink></li>
                         </ul>                    
                     </div>
                     
                 </nav>
                 <ul className="sidenav" id='mobile-links'>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/work">My Work</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><NavLink to="/">About</NavLink></li>
+                    <li><NavLink to="/work">My Work</NavLink></li>
+                    <li><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
                 <div id="social" className='hide-on-small-only'>
                     <ul>

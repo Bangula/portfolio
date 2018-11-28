@@ -3,6 +3,13 @@
           box-sizing: border-box;
 }
 
+nav {
+  top: 30px;
+  -webkit-transition: top 0.4s;
+  transition: top 0.4s;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
 #social {
   position: fixed;
   right: -150px;
@@ -21,5 +28,72 @@
   width: 150px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+#about {
+  height: 70vh;
+  margin: 0;
+  padding: 0;
+}
+
+#about #welcome {
+  height: 150px;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  margin-top: 20vh;
+}
+
+#about #hello-msg {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  opacity: 0;
+}
+
+#about #hello-msg q {
+  display: block;
+  padding: 40px 50px;
+}
+
+#about #hello-msg h5 {
+  margin-top: 60px;
+}
+
+#about #hello-msg img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+#about #hello-msg #btns {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#about #hello-msg #btns a {
+  margin-right: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#about #hello-msg #btns a:last-child {
+  margin-right: 0;
+}
+
+#about #hello-msg #btns a:hover {
+  opacity: 0.8;
+}
+
+.active {
+  border-bottom: 1px solid black;
+}
+
+.brand-logo {
+  border-bottom: none;
+}
+
+#skills {
+  margin: 0;
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

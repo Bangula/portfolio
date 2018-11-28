@@ -1,5 +1,12 @@
+
 * {
     box-sizing: border-box;
+}
+nav {
+    top: 30px;
+    transition: top 0.4s;
+    border-top: 0.5px solid rgba(0,0,0,0.2);
+    
 }
 #social {
     position: fixed;
@@ -16,3 +23,58 @@
     }
 }
 
+#about {
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    #welcome {        
+        height: 150px;
+        overflow: hidden;
+        transition: all 1s;
+        margin-top: 20vh;      
+    }
+    #hello-msg {
+        transition: all 1s;
+        opacity: 0;
+        q {
+            display: block;
+            padding: 40px 50px;
+        }
+        h5 {
+            margin-top: 60px;
+        }
+        img {
+            width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+        #btns {
+            width: 80%;
+            margin: 0 auto;
+        }
+        #btns a {
+            margin-right: 10px;
+            transition: all 0.3s;
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }  
+    
+}
+
+
+.active {
+    border-bottom: 1px solid black;
+}
+.brand-logo {
+    border-bottom: none
+}
+#skills {
+    margin: 0;
+    width: 100%;
+
+}
