@@ -16,7 +16,7 @@ class Work extends Component {
             <div id="work">
                 <h1 className='center green white-text'>Work page</h1>
                 <div className="container row">
-                    <div className="col s12 m6 l4">
+                    <div className="col s12 m6 l6">
                         <div className="card medium">
                             <div className="card-image">
                                 <img src={Neoprint} className='responsive-img' alt="neoprint website"/>
@@ -31,7 +31,7 @@ class Work extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col s12 m6 l4">
+                    <div className="col s12 m6 l6">
                         <div className="card  medium">
                             <div className="card-image">
                                 <img src={Coffee} className='responsive-img' alt="neoprint website"/>
@@ -46,7 +46,7 @@ class Work extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col s12 m6 l4">
+                    <div className="col s12 m6 l6">
                         <div className="card medium">
                             <div className="card-image">
                                 <img src={Headlines} className='responsive-img' alt="neoprint website"/>

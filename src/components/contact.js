@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import M from "materialize-css/dist/js/materialize.js";
+import "materialize-css/dist/css/materialize.min.css";
+
 
 class Contact extends Component {
-
+    componentDidMount(){
+        M.AutoInit();
+    }
     render(){
         return(
             <div id="contact">

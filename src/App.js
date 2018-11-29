@@ -16,8 +16,8 @@ class App extends Component {
           <Navbar />
           <Route exact path='/' component={About} />
           <Route path='/work' component={Work} />
-          <Route path='/contact' component={Contact} />          
-          <Footer />
+          <Route path='/contact' component={Contact} />  
+          <Footer />        
         </div>
       </HashRouter>
     );

@@ -1,35 +1,46 @@
 import React, { Component } from 'react';
+import M from "materialize-css/dist/js/materialize.js";
 import '../css/styles.css';
 import Webimg from '../images/web-development2.png'
 import Skills from './skills';
+import Aboutme from './aboutme';
 import { showAbout, stopAbout } from './main';
+import { NavLink } from 'react-router-dom';
 
 class About extends Component {
     
     componentDidMount(){
+        M.AutoInit();
         showAbout();
+        
     }
     componentWillUnmount(){
         stopAbout();
     }
+    toSkills = (elem) => {
+        document.getElementById(elem).scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
     render(){
         return(
-            <div id="about-container">
-                <div id="about" className=''>
+            <div id="about" className=''>
                 <h1 className='center grey-text text-darken-1' id='welcome'>Welcome!</h1>
-                <div id="hello-msg" className='container'>
+                <div id="hello-msg" className=''>
                     <img src={Webimg} alt="asd"/>
-                    <h5 className='center grey-text text-darken-1'>Hi, my name is Bane.I am a front-end developer from Kragujevac, Serbia</h5>
-                    <q className='center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sed hic culpa impedit, iure laborum beatae obcaecati perspiciatis tempore fugiat doloremque excepturi, non amet repudiandae necessitatibus veritatis! Tempora, fuga excepturi.</q>
-                    <div id="btns" className='center'>
-                        <a href="/" className='btn "waves-effect waves-light teal lighten-2'>My Skills</a>
-                        <a href="/" className='btn "waves-effect waves-light teal lighten-2'>About Me</a>
+                    <div className="container">
+                        <h5 className='center grey-text text-darken-1'>Hi, my name is Bane. I am a front-end developer from Kragujevac, Serbia.</h5>
+                        <q className='center'>Currently available and looking for opportunity to work with some great team of developers, on a new and interesting projects. <NavLink to='/contact'>Let me know</NavLink> if you need some front-end job done, or just wanna share some experience with a cup of coffee :)</q>
                     </div>
-                </div>
-                
+                    <div id="btns" className='center'>
+                        <button className='btn  light-blue darken-2' onClick={() => {this.toSkills('aboutme')}}>About Me</button>
+                        <button className='btn teal darken-2' onClick={() => {this.toSkills('skills')}}>My Skills</button>
+                    </div>
+                    <Aboutme />
+                    <Skills />                    
+                </div>                
             </div>  
-            <Skills />
-            </div>
+            
                       
         )
     }

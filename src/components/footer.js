@@ -1,31 +1,32 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return(
-        <footer class="page-footer #1e88e5 blue darken-1">
+        <footer class="page-footer teal darken-3">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <p class="white-text">You can use rows and columns here to organize your footer content.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Menu</h5>
+                <h5 class="white-text">Links</h5>
                 <ul>
-                    <li><NavLink className='grey-text text-lighten-4' to="/">About</NavLink></li>
-                    <li><NavLink className='grey-text text-lighten-4' to="/work">My Work</NavLink></li>
-                    <li><NavLink className='grey-text text-lighten-4' to="/contact">Contact</NavLink></li>
+                  <li><a class="white-text" href="#!">Link 1</a></li>
+                  <li><a class="white-text" href="#!">Link 2</a></li>
+                  <li><a class="white-text" href="#!">Link 3</a></li>
+                  <li><a class="white-text" href="#!">Link 4</a></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="footer-copyright #1e88e5 blue darken-3">
-            <div class="container">
-            © 2018 Copyright Branko Vuković - bvukovic082@gmail.com
+          <div class="footer-copyright">
+            <div class="container center">
+                <p className='white-text'>© 2018 Copyright Vuković Branko - bvukovic082@gmail.com</p> 
             </div>
           </div>
         </footer>
+
     )
 }
 export default Footer;
