@@ -4,6 +4,7 @@ import "materialize-css/dist/css/materialize.min.css";
 import '../css/styles.css';
 import {NavLink} from 'react-router-dom';
 import Arrow from '../images/up-arrow.png';
+import Profile from '../images/profile.jpg'
 
 class Navbar extends Component {
     
@@ -14,6 +15,7 @@ class Navbar extends Component {
         });
         setTimeout(() => {
             document.getElementById('social').style.right = '0';            
+            document.getElementById('social-mobile').style.right = '0';            
         }, 3000);
         document.addEventListener('scroll', () => {
             if(document.documentElement.scrollTop || document.body.scrollTop > 10){
@@ -37,7 +39,7 @@ class Navbar extends Component {
                 <div className="navbar-fixed">
                     <nav className='nav-wrapper white'>
                         <div className="container">
-                            <NavLink to="/" className='brand-logo teal-text text-darken-4'>Portfolio</NavLink>
+                            <NavLink to="/" className='brand-logo teal-text text-darken-4'>BV</NavLink>
                             <a href="/" className="sidenav-trigger" data-target='mobile-links'>
                                 <i className='material-icons grey-text text-darken-3'>menu</i>
                             </a>
@@ -49,8 +51,8 @@ class Navbar extends Component {
                     </nav>
                 </div>
                 <ul className="sidenav" id='mobile-links'>
-                    <li>
-                        <h3 className='center'>Logo</h3>
+                    <li className='center'>
+                        <img src={Profile} className='circle' alt="profile img"/>
                     </li>
                     <li><NavLink to="/">About</NavLink></li>
                     <li><NavLink to="/work">My Work</NavLink></li>
@@ -60,6 +62,13 @@ class Navbar extends Component {
                         <li><a href="https://www.facebook.com/banebangula" className='social waves-effect waves-light btn-small indigo'>facebook</a></li>
                         <li><a href="https://www.linkedin.com/in/branko-vuković-92a703169" className='social waves-effect waves-light btn-small #0277bd light-blue darken-3'>linkedin</a></li>
                         <li><a href="https://github.com/Bangula" className='social waves-effect waves-light btn-small ##263238 blue-grey darken-4'>github</a></li>
+                    </ul>
+                </div>
+                <div id="social-mobile" className='show-on-small'>
+                    <ul>
+                        <li><a href="https://www.facebook.com/banebangula" className='social waves-effect waves-light btn-floating indigo center'>f</a></li>
+                        <li><a href="https://www.linkedin.com/in/branko-vuković-92a703169" className='social waves-effect waves-light btn-floating #0277bd light-blue darken-3 center'>in</a></li>
+                        <li><a href="https://github.com/Bangula" className='social waves-effect waves-light btn-floating ##263238 blue-grey darken-4 center'>git</a></li>
                     </ul>
                 </div>
                 <img src={Arrow} id='arrow' alt="up arrow" onClick={this.toTop} />

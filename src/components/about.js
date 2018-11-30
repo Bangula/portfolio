@@ -31,11 +31,11 @@ class About extends Component {
                     <img src={Webimg} alt="asd"/>
                     <div className="container">
                         <h5 className='center grey-text text-darken-1'>Hi, my name is Bane. I am a front-end developer from Kragujevac, Serbia.</h5>
-                        <q className='center'>Currently available and looking for opportunity to work with some great team of developers, on a new and interesting projects. <NavLink to='/contact'>Let me know</NavLink> if you need some front-end job done, or just wanna share some experience with a cup of coffee :)</q>
+                        <q className='center grey-text text-darken-1'>Currently available and looking for opportunity to work with some great team of developers, on a new and interesting projects. <NavLink to='/contact'>Let me know</NavLink> if you need some front-end job done, or just wanna share some experience with a cup of coffee :)</q>
                     </div>
                     <div id="btns" className='center'>
-                        <button className='btn  light-blue darken-2' onClick={() => {this.toSkills('aboutme')}}>About Me</button>
-                        <button className='btn teal darken-2' onClick={() => {this.toSkills('skills')}}>My Skills</button>
+                        <button className='btn btn-small light-blue darken-2' onClick={() => {this.toSkills('aboutme')}}>About Me</button>
+                        <button className='btn btn-small eal darken-2' onClick={() => {this.toSkills('skills')}}>My Skills</button>
                     </div>
                     <Aboutme />
                     <Skills />  

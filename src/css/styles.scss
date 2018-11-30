@@ -19,10 +19,15 @@
         transition: opacity 0.5s;
         cursor: pointer;
     }
+    img {
+        width: 100px;
+    }
+    
 }
 
 #social {
     position: fixed;
+    z-index: 450;
     right: -150px;
     top: 50%;
     transform: translateY(-50%);
@@ -32,6 +37,20 @@
     }
     .social {
         width: 150px;    
+        transition: all 0.5s;
+    }
+}
+#social-mobile {
+    z-index: 450;
+    position: fixed;
+    right: -150px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.7s;
+    ul {
+        list-style-type: none;
+    }
+    .social {
         transition: all 0.5s;
     }
 }
@@ -146,6 +165,47 @@ footer {
     }
     .info {
         padding-bottom: 40px;
-    }
+    }    
     
 }
+
+//Responsiv design
+@media screen and (max-width: 480px) {
+    
+    #about #hello-msg {
+        h5 {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        q {
+            padding-left: 5px;
+            padding-right: 5px;
+            text-align: justify;
+        }
+    }
+    #aboutme {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        q{
+            padding-top: 5px !important;
+        }
+    }
+    #skills {
+        padding-bottom: 40px;
+    }
+    #contact {
+        padding-top: 20px;
+        .info h5{
+            text-align: center;
+        }
+    }
+    #arrow {
+        right: 5px !important;
+        bottom: 5px !important;
+    }
+    #work {
+        padding-bottom: 40px;
+    }
+}
+    
