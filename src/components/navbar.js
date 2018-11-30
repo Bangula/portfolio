@@ -44,7 +44,6 @@ class Navbar extends Component {
                             <ul className='right hide-on-med-and-down'>
                                 <li><NavLink className='teal-text text-darken-3' to="/">About</NavLink></li>
                                 <li><NavLink className='teal-text text-darken-3' to="/work">My Work</NavLink></li>
-                                <li><NavLink className='teal-text text-darken-3' to="/contact">Contact</NavLink></li>
                             </ul>                    
                         </div>                        
                     </nav>
@@ -55,7 +54,6 @@ class Navbar extends Component {
                     </li>
                     <li><NavLink to="/">About</NavLink></li>
                     <li><NavLink to="/work">My Work</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
                 <div id="social" className='hide-on-small-only'>
                     <ul>

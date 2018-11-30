@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './components/navbar';
 import About from './components/about';
-import Contact from './components/contact';
 import Work from './components/work';
 import Footer from './components/footer';
 import './css/styles.css';
@@ -16,7 +15,6 @@ class App extends Component {
           <Navbar />
           <Route exact path='/' component={About} />
           <Route path='/work' component={Work} />
-          <Route path='/contact' component={Contact} />  
           <Footer />        
         </div>
       </HashRouter>

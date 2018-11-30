@@ -4,6 +4,7 @@ import '../css/styles.css';
 import Webimg from '../images/web-development2.png'
 import Skills from './skills';
 import Aboutme from './aboutme';
+import Contact from './contact';
 import { showAbout, stopAbout } from './main';
 import { NavLink } from 'react-router-dom';
 
@@ -37,7 +38,8 @@ class About extends Component {
                         <button className='btn teal darken-2' onClick={() => {this.toSkills('skills')}}>My Skills</button>
                     </div>
                     <Aboutme />
-                    <Skills />                    
+                    <Skills />  
+                    <Contact />                  
                 </div>                
             </div>  
             

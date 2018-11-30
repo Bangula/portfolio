@@ -15,16 +15,16 @@ const Skills = () => {
                     <div className="row">
                         <div className="col s12">
                             <ul className="tabs">
-                                <li className="tab col s3"><a href="#section1" className="active teal-text text-darken-4" >HTML5/CSS3</a></li>
-                                <li className="tab col s3"><a href="#section2" className='teal-text text-darken-4'>JavaScript</a></li>
-                                <li className="tab col s3"><a href="#section3" className='teal-text text-darken-4'>React JS</a></li>
-                                <li className="tab col s3"><a href="#section4" className='teal-text text-darken-4'>Node JS</a></li>
+                                <li className="tab col s6 m3 l3"><a href="#section1" className="active teal-text text-darken-4 " >HTML5/CSS3</a></li>
+                                <li className="tab col s6 m3 l3"><a href="#section2" className='teal-text text-darken-4'>JavaScript</a></li>
+                                <li className="tab col s6 m3 l3"><a href="#section3" className='teal-text text-darken-4'>React JS</a></li>
+                                <li className="tab col s6 m3 l3"><a href="#section4" className='teal-text text-darken-4'>Node JS</a></li>
                             </ul>
                         </div>
                         <div id="section1" className="tabSection col s12">
                             <div className='sectionImg'>
                                 <img src={HtmlImg} alt="html css"/>
-                            </div>
+                            </div>                            
                             <div className='sectionDescription'>
                                 <p className='center teal-text text-darken-4 skillDscr'>Knowledge acquired through self-study of these markup and style sheet languages, I perfected on Cluster Academy of ICT Cluster of Central Serbia with maximum number of points. CSS frameworks and preprocessors witch i use most are <b>SASS(SCSS)</b>, <b>Bootstrap</b>  and <b>Materialize</b>.</p>
                             </div>
@@ -42,7 +42,7 @@ const Skills = () => {
                                 <img src={ReactImg} alt="html css"/>
                             </div>
                             <div className='sectionDescription'>
-                                <p className='center teal-text text-darken-4 skillDscr'>Today, when the performance is most important, it is necessary to use one of the JS frameworks. I have chosen the ReactJS, because of its popularity and it's great for creating fast one-page apps.</p>
+                                <p className='center teal-text text-darken-4 skillDscr'>Today, when the performance is most important, it is necessary to use one of the JS frameworks. I have chosen the ReactJS, because of its popularity and it's great for creating fast one-page apps. With Redux the data management is highly efficient in React.</p>
                             </div>
                         </div>
                         <div id="section4" className="tabSection col s12">
