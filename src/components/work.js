@@ -22,7 +22,7 @@ class Work extends Component {
                 </div>
                 <div className="container row">
                     <div className="col s12 m6 l6">
-                        <div className="card medium hoverable">
+                        <div className="card small hoverable">
                             <div className="card-image">
                                 <img src={Neoprint} className='responsive-img' alt="neoprint website"/>
                             </div>
@@ -37,7 +37,7 @@ class Work extends Component {
                         </div>
                     </div>
                     <div className="col s12 m6 l6">
-                        <div className="card  medium hoverable">
+                        <div className="card  small hoverable">
                             <div className="card-image">
                                 <img src={Coffee} className='responsive-img' alt="neoprint website"/>
                             </div>
@@ -52,7 +52,7 @@ class Work extends Component {
                         </div>
                     </div>
                     <div className="col s12 m6 l6">
-                        <div className="card medium hoverable">
+                        <div className="card small hoverable">
                             <div className="card-image">
                                 <img src={Headlines} className='responsive-img' alt="neoprint website"/>
                             </div>
@@ -76,7 +76,7 @@ class Work extends Component {
                 <div className="modal" id="coffee">
                 <div className="modal-content">
                         <h4>Find coffee nearby.</h4>
-                        <p>It'll help you find some coffee nearby. The app is created in educational purpose and it's pretty useful. Only HTML5, CSS3 and JavaScript is used for building the app.</p>
+                        <p>It'll help you find some coffee nearby. The app is created in educational purpose and it's pretty useful. Only HTML5, CSS3 and JavaScript is used for building this app.</p>
                     </div>
                 </div>
                 <div className="modal" id="headlines">

@@ -3,6 +3,14 @@
           box-sizing: border-box;
 }
 
+body {
+  background: #fafafa;
+}
+
+.tabs {
+  background: #fafafa;
+}
+
 #navbar nav {
   top: 30px;
   -webkit-transition: top 0.4s;
@@ -24,6 +32,11 @@
 
 #navbar img {
   width: 100px;
+}
+
+#navbar .brand-logo {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
 }
 
 #social {
@@ -70,6 +83,7 @@
 #about {
   margin: 0;
   padding: 0;
+  margin-top: 15vh;
 }
 
 #about #welcome {
@@ -83,7 +97,6 @@
 #about #hello-msg {
   -webkit-transition: all 1s;
   transition: all 1s;
-  opacity: 0;
 }
 
 #about #hello-msg q {
@@ -228,6 +241,7 @@ footer p {
   }
   #contact {
     padding-top: 20px;
+    padding-bottom: 20px;
   }
   #contact .info h5 {
     text-align: center;

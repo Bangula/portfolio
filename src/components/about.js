@@ -5,19 +5,14 @@ import Webimg from '../images/web-development2.png'
 import Skills from './skills';
 import Aboutme from './aboutme';
 import Contact from './contact';
-import { showAbout, stopAbout } from './main';
 import { NavLink } from 'react-router-dom';
 
 class About extends Component {
     
     componentDidMount(){
-        M.AutoInit();
-        showAbout();
-        
+        M.AutoInit();        
     }
-    componentWillUnmount(){
-        stopAbout();
-    }
+    
     toSkills = (elem) => {
         document.getElementById(elem).scrollIntoView({
             behavior: 'smooth'
@@ -26,7 +21,6 @@ class About extends Component {
     render(){
         return(
             <div id="about" className=''>
-                <h1 className='center grey-text text-darken-1' id='welcome'>Welcome!</h1>
                 <div id="hello-msg" className=''>
                     <img src={Webimg} alt="asd"/>
                     <div className="container">
@@ -34,8 +28,8 @@ class About extends Component {
                         <q className='center grey-text text-darken-1'>Currently available and looking for opportunity to work with some great team of developers, on a new and interesting projects. <NavLink to='/contact'>Let me know</NavLink> if you need some front-end job done, or just wanna share some experience with a cup of coffee :)</q>
                     </div>
                     <div id="btns" className='center'>
-                        <button className='btn btn-small light-blue darken-2' onClick={() => {this.toSkills('aboutme')}}>About Me</button>
-                        <button className='btn btn-small eal darken-2' onClick={() => {this.toSkills('skills')}}>My Skills</button>
+                        <button className='btn btn-small light-blue darken-2 hoverable' onClick={() => {this.toSkills('aboutme')}}>About Me</button>
+                        <button className='btn btn-small eal darken-2 hoverable' onClick={() => {this.toSkills('skills')}}>My Skills</button>
                     </div>
                     <Aboutme />
                     <Skills />  

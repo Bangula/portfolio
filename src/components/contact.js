@@ -12,6 +12,7 @@ class Contact extends Component {
     }
     
     render(){
+        
         return(
             <div id="contact" className='valign-wrapper'>
                 <div className="container row">
@@ -20,8 +21,7 @@ class Contact extends Component {
                         <p className='grey-text text-darken-1'><i className='material-icons teal-text left'>mail</i> bvukovic082@gmail.com</p>
                     </div>
                     <div className="form col s12 m6 l6" id="form">
-                        
-                        <form name="portfolio" id="portfolio" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSenuTZ90qsh95Imf8kytbITpPCqlDDjlLRZcwqLASmdFNWv7Q/viewform?" target='_blank' onSubmit={this.handleSubmit}>
+                    <form name="portfolio" id="portfolio" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSenuTZ90qsh95Imf8kytbITpPCqlDDjlLRZcwqLASmdFNWv7Q/viewform?" target='_blank' onSubmit={this.handleSubmit}>
                             <label>Your name:</label>
                             <input type="text" name='entry.1927068138' id='entry.1927068138' />   
                             <label>Email:</label>

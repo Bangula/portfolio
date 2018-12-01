@@ -31,7 +31,6 @@ class Navbar extends Component {
         document.querySelector('#navbar').scrollIntoView({
             behavior: 'smooth'
         });
-        console.log('radi')
     }
     render(){
         return(            
@@ -39,7 +38,7 @@ class Navbar extends Component {
                 <div className="navbar-fixed">
                     <nav className='nav-wrapper white'>
                         <div className="container">
-                            <NavLink to="/" className='brand-logo teal-text text-darken-4'>BV</NavLink>
+                            <NavLink to="/" className='brand-logo teal-text text-darken-1'>BV</NavLink>
                             <a href="/" className="sidenav-trigger" data-target='mobile-links'>
                                 <i className='material-icons grey-text text-darken-3'>menu</i>
                             </a>
@@ -64,7 +63,7 @@ class Navbar extends Component {
                         <li><a href="https://github.com/Bangula" className='social waves-effect waves-light btn-small ##263238 blue-grey darken-4'>github</a></li>
                     </ul>
                 </div>
-                <div id="social-mobile" className='show-on-small'>
+                <div id="social-mobile" className='hide-on-med-and-up'>
                     <ul>
                         <li><a href="https://www.facebook.com/banebangula" className='social waves-effect waves-light btn-floating indigo center'>f</a></li>
                         <li><a href="https://www.linkedin.com/in/branko-vuković-92a703169" className='social waves-effect waves-light btn-floating #0277bd light-blue darken-3 center'>in</a></li>
