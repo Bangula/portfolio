@@ -22,7 +22,7 @@ class Work extends Component {
                 </div>
                 <div className="container row">
                     <div className="col s12 m6 l6">
-                        <div className="card small hoverable">
+                        <div className="card medium hoverable">
                             <div className="card-image">
                                 <img src={Neoprint} className='responsive-img' alt="neoprint website"/>
                             </div>
@@ -37,7 +37,7 @@ class Work extends Component {
                         </div>
                     </div>
                     <div className="col s12 m6 l6">
-                        <div className="card  small hoverable">
+                        <div className="card  medium hoverable">
                             <div className="card-image">
                                 <img src={Coffee} className='responsive-img' alt="neoprint website"/>
                             </div>
@@ -52,7 +52,7 @@ class Work extends Component {
                         </div>
                     </div>
                     <div className="col s12 m6 l6">
-                        <div className="card small hoverable">
+                        <div className="card medium hoverable">
                             <div className="card-image">
                                 <img src={Headlines} className='responsive-img' alt="neoprint website"/>
                             </div>
