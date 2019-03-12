@@ -4,6 +4,7 @@ import "materialize-css/dist/css/materialize.min.css";
 import Neoprint from '../images/neoprint.png';
 import Coffee from '../images/coffee.png';
 import Headlines from '../images/headlines.png';
+import Crypto from '../images/crypto.png';
 
 //https://docs.google.com/forms/d/e/1FAIpQLSenuTZ90qsh95Imf8kytbITpPCqlDDjlLRZcwqLASmdFNWv7Q/viewform?usp=pp_url&entry.1927068138=bane&entry.562054209=bane@gmail.com&entry.78786637=askdjf+asdlfkj
 class Work extends Component {
@@ -66,6 +67,21 @@ class Work extends Component {
                             </div>
                         </div>
                     </div>
+                    <div className="col s12 m6 l6">
+                        <div className="card medium hoverable">
+                            <div className="card-image">
+                                <img src={Crypto} className='responsive-img' alt="Crypto currency website"/>
+                            </div>
+                            <div className="card-content">
+                                <span className="card-title teal-text lighten-2">Crypto Track App</span>
+                                <p>Top 50 Cryptocurrencies</p>
+                            </div>
+                            <div className="card-action">
+                                <a href="#crypto" className='modal-trigger'>Descirpiton</a>
+                                <a href="https://enigmatic-escarpment-60792.herokuapp.com/" target='_blank'>Visite website</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="modal" id="neoprint">
                     <div className="modal-content">
@@ -80,11 +96,19 @@ class Work extends Component {
                     </div>
                 </div>
                 <div className="modal" id="headlines">
-                <div className="modal-content">
+                    <div className="modal-content">
                         <h4>News Headlines</h4>
                         <p>Get the latest news headlines from hundreds of portals all around the globe, or get latest weather forecast for your location or any other city around the world.</p>
                     </div>
                 </div>
+                <div className="modal" id="crypto">
+                    <div className="modal-content">
+                        <h4>CryptoTrackApp</h4>
+                        <p>App is created in React and NodeJs, and it's use API service from coinmarketcap.com for receiving a data about cryptocurrencies.
+                           App is tracking info aboute your coins, saved in localStorage after submitting them in table. 
+                        </p>
+                    </div>
+                </div>                
             </div>            
         )
     }
